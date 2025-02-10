@@ -26,14 +26,17 @@ function App() {
 
       {/* About-Me */}
       <div className='about-me'>
-        <h2>About Me</h2>
-        <div className='about-me-content'>
-          <img src=".\images\profile.png" alt="Mubeen Khan" className="about-me-image" />
-          <p>
-            I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
-          </p>
+      <h2>About Me</h2>
+      <div className='about-me-content'>
+        {/* another container to keep the circle shape of the image */}
+        <div className="about-me-image-container">
+          <img src="./images/profile2.png" alt="Mubeen Khan" className="about-me-image" />
         </div>
+        <p>
+          I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
+        </p>
       </div>
+    </div>
 
       {/* Education */}
       <div className='education'>
