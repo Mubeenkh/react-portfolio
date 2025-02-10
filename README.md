@@ -1,3 +1,7 @@
+# React-Portfolio
+Using React to make my portfolio
+This is my first time using react so don't judge...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
