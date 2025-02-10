@@ -23,12 +23,31 @@ function App() {
         loop
         />
       </div>
+
+      {/* About-Me */}
       <div className='about-me'>
         <h2>About Me</h2>
         <p>
           I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
         </p>
       </div>
+
+      {/* Education */}
+      <div className='education'>
+        <h2>Education</h2>
+        <div className='education-item'>
+          <h3>Concordia University</h3>
+          <p>Bachelor of Computer Science</p>
+          <p>2024 - Present</p>
+        </div>
+        <div className='education-item'>
+          <h3>Vanier College</h3>
+          <p>Computer Science and Technology</p>
+          <p>2021 - 2024</p>
+        </div>
+      </div>
+
+      {/* Skills */}
       <div className='skills'>
         <h2>Skills</h2>
         <ul>
@@ -40,6 +59,8 @@ function App() {
           <li>Flutter</li>
         </ul>
       </div>
+
+      {/* Contact */}
       <div className='contact'>
         <h2>Contact</h2>
         <p><strong>Email:</strong> mubeen.khan@example.com</p>

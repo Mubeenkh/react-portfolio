@@ -52,6 +52,38 @@ h1 {
     margin: 0;
 }
 
+.education {
+    margin-bottom: 40px;
+    background-color: #2b3137;
+    color: #ecf0f1;
+    padding: .5rem 2rem .5rem 2rem;
+    margin: 2rem auto; /* Center the div */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set a maximum width */
+    width: 90%; /* Ensure it looks good on smaller screens */
+    text-align: left; /* Align text to the left */
+}
+  
+.education-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.education-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
 .skills {
     background-color: #2b3137;
     color: #ecf0f1;
