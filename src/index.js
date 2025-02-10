@@ -27,9 +27,12 @@ function App() {
       {/* About-Me */}
       <div className='about-me'>
         <h2>About Me</h2>
-        <p>
-          I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
-        </p>
+        <div className='about-me-content'>
+          <img src=".\images\profile.png" alt="Mubeen Khan" className="about-me-image" />
+          <p>
+            I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
+          </p>
+        </div>
       </div>
 
       {/* Education */}
