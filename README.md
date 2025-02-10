@@ -1,5 +1,5 @@
 # React-Portfolio
-Using React to make my portfolio
+Using React to make my portfolio.\
 This is my first time using react so don't judge...
 
 # Getting Started with Create React App
