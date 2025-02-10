@@ -15,7 +15,7 @@ function App() {
         strings={[
           "Hi, my name is Mubeen Khan",
           "I am a Computer Science Student",
-          "First year at Concordia University",
+          "No... I am not related to KhanAcademy",
         ]}
         typeSpeed={30}
         backSpeed={50}

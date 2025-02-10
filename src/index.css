@@ -113,8 +113,8 @@ h1 {
 }
 
 .skills ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     list-style-type: none; /* Remove default list styling */
     padding: 0;
@@ -122,12 +122,18 @@ h1 {
 
 .skills li {
     background-color: #3a3f44;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     text-align: center;
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .contact {
