@@ -63,9 +63,9 @@ function App() {
       {/* Contact */}
       <div className='contact'>
         <h2>Contact</h2>
-        <p><strong>Email:</strong> mubeen.khan@example.com</p>
+        <p><strong>Email:</strong> mubkhan01@gmail.com</p>
         <p><strong>Phone:</strong> (123) 456-7890</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubeen-khan" target="_blank" rel="noopener noreferrer">linkedin.com/in/mubeen-khan</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubeen-khan-75b48511a" target="_blank" rel="noopener noreferrer">linkedin.com/in/mubeen-khan</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/Mubeenkh" target="_blank" rel="noopener noreferrer">github.com/Mubeenkh</a></p>
       </div>
     </div>
