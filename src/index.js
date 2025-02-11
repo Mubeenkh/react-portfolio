@@ -79,45 +79,43 @@ function App() {
         </ul>
       </div>
       
-      {/* Projects */}
       <div id="projects" className='projects'>
-        <h2>Projects</h2>
+          <h2>Projects</h2>
+          <div className='projects-grid'>
+            <div className='project-item'>
+              <h3>Web-based IoT Dashboard</h3>
+              <p>Developed a web-based dashboard to monitor and control IoT devices in real-time using Python and C++.</p>
+              <div className="project-image-container">
+                <img src="./images/profile.png" alt="Project" className="project-image" />
+              </div>
+            </div>
 
-        <div className='project-item'>
-          <h3>Web-based IoT Dashboard</h3>
-          <p>Developed a web-based dashboard to monitor and control IoT devices in real-time using Python and C++.</p>
-        </div>
+            <div className='project-item'>
+              <h3>Inventory Management Website</h3>
+              <p>Created an inventory management system with a user-friendly interface and robust backend using PHP, HTML, CSS, and JavaScript.</p>
+              <div className="project-image-container">
+                <img src="./images/profile.png" alt="Project" className="project-image" />
+              </div>
+            </div>
 
-        <div className='project-item'>
-          <h3>Inventory Management Website</h3>
-          <p>Created an inventory management system with a user-friendly interface and robust backend using PHP, HTML, CSS, and JavaScript.</p>
-        </div>
+            <div className='project-item'>
+              <h3>Project</h3>
+              <p>Description.</p>
+              <div className="project-image-container">
+                <img src="./images/profile.png" alt="Project" className="project-image" />
+              </div>
+            </div>
 
-        <div className='project-item'>
-          <h3>project</h3>
-          <p>description.</p>
+            <div className='project-item'>
+              <h3>Project</h3>
+              <p>Description.</p>
+              <div className="project-image-container">
+                <img src="./images/profile.png" alt="Project" className="project-image" />
+              </div>
+            </div>
+            
+          </div>
         </div>
-
-        <div className='project-item'>
-          <h3>project</h3>
-          <p>description.</p>
-        </div>
-
-        <div className='project-item'>
-          <h3>project</h3>
-          <p>description.</p>
-        </div>
-
-        <div className='project-item'>
-          <h3>project</h3>
-          <p>description.</p>
-        </div>
-
-        <div className='project-item'>
-          <h3>project</h3>
-          <p>description.</p>
-        </div>
-      </div>
 
 
       {/* Contact */}
