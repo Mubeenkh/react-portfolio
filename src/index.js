@@ -18,7 +18,7 @@ function App() {
     <div className="app">
 
       {/* Navbar */}
-      {/* <nav className='navbar'>
+      <nav className='navbar'>
         <ul>
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#education">Education</a></li>
@@ -26,16 +26,17 @@ function App() {
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav> */}
+      </nav>
+      
+      {/* Button for Dark Mode and Light Mode */}
+      <button onClick={toggleTheme}>
+        {theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+      </button>
+
       
       <div className="main-container">
-
         <div className="header">
-          <h1>Welcome to my Portfolio</h1>
-          {/* Button for Dark Mode and Light Mode */}
-          <button onClick={toggleTheme}>
-            {theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-          </button>
+          <h1>Welcome to my Portfolio</h1>       
         </div>
 
         <div className="animation-typing">

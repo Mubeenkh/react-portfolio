@@ -7,6 +7,7 @@
     --border-color: 1px solid #444;
     --item-color: #3a3f44;
     --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-color: #c7c7c7;
 }
 
 /* Light Mode */
@@ -18,21 +19,61 @@
     --border-color: 1px solid #ddd;
     --item-color: #e0e0e0;
     --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-color: #c7c7c7;
 }
 
 body{
     background-color: var(--background-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .app {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+/* Navbar Styles */
+.navbar {
+    background-color: var(--section-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow-box);
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem auto; /* Center the div */
+    max-width: 800px;
+    width: 90%; 
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove Dots from list */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+}
+
+
 /* Make main-container and header 100vh and centered */
 .main-container{
-    height: 100vh; /* Make the container take up the entire screen */
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
