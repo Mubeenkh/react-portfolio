@@ -7,36 +7,45 @@ import './index.css';
 function App() {
   return (
     <div className="app">
-      <div className="header">
-        <h1>Welcome to my Portfolio</h1>
-      </div>
-      <div className="animation-typing">
-        <ReactTyped
-        strings={[
-          "Hi, my name is Mubeen Khan",
-          "I am a Computer Science Student",
-          "No... I am not related to KhanAcademy",
-        ]}
-        typeSpeed={30}
-        backSpeed={50}
-        backDelay={2000}
-        loop
-        />
-      </div>
 
-      {/* About-Me */}
-      <div className='about-me'>
-      <h2>About Me</h2>
-      <div className='about-me-content'>
-        {/* another container to keep the circle shape of the image */}
-        <div className="about-me-image-container">
-          <img src="./images/profile2.png" alt="Mubeen Khan" className="about-me-image" />
+      <div className="main-container">
+
+        <div className="header">
+          <h1>Welcome to my Portfolio</h1>
         </div>
-        <p>
-          I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
-        </p>
+
+        <div className="animation-typing">
+          <ReactTyped
+          strings={[
+            "Hi, my name is Mubeen Khan",
+            "I am a Computer Science Student",
+            "No... I am not related to KhanAcademy",
+          ]}
+          typeSpeed={30}
+          backSpeed={50}
+          backDelay={2000}
+          loop
+          />
+        </div>
+
+        {/* About-Me */}
+        <div className='about-me'>
+
+          <h2>About Me</h2>
+          <div className='about-me-content'>
+            {/* another container to keep the circle shape of the image */}
+            <div className="about-me-image-container">
+              <img src="./images/profile2.png" alt="Mubeen Khan" className="about-me-image" />
+            </div>
+
+            <p>
+              I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
+            </p>
+            
+          </div>
+
+        </div>
       </div>
-    </div>
 
       {/* Education */}
       <div className='education'>

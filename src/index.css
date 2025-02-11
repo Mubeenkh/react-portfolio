@@ -8,6 +8,18 @@ body{
     text-align: center;
 }
 
+/* Make main-container and header 100vh and centered */
+.main-container{
+    height: 100vh; /* Make the container take up the entire screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    margin-bottom: 1rem;
+}
+
 h1 {
     color: #fafbfc; /* Fallback color */
     font-size: 2.5rem;
@@ -39,6 +51,7 @@ h1 {
     max-width: 800px; /* Set a maximum width */
     width: 90%; /* Ensure it looks good on smaller screens */
     text-align: left;
+    height: 50%;
 }
 
 .about-me h2 {
