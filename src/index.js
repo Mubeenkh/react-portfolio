@@ -41,14 +41,14 @@ function App() {
             <p>
               I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
             </p>
-            
           </div>
 
         </div>
       </div>
+      
 
       {/* Education */}
-      <div className='education'>
+      <div id="education" className='education'>
         <h2>Education</h2>
         <div className='education-item'>
           <h3>Concordia University</h3>
@@ -63,20 +63,65 @@ function App() {
       </div>
 
       {/* Skills */}
-      <div className='skills'>
+      <div id="skills" className='skills'>
         <h2>Skills</h2>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
+          <li>PHP</li>
           <li>Flutter</li>
+          <li>Dart</li>
+          <li>Python</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>React</li>
         </ul>
       </div>
+      
+      {/* Projects */}
+      <div id="projects" className='projects'>
+        <h2>Projects</h2>
+
+        <div className='project-item'>
+          <h3>Web-based IoT Dashboard</h3>
+          <p>Developed a web-based dashboard to monitor and control IoT devices in real-time using Python and C++.</p>
+        </div>
+
+        <div className='project-item'>
+          <h3>Inventory Management Website</h3>
+          <p>Created an inventory management system with a user-friendly interface and robust backend using PHP, HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div className='project-item'>
+          <h3>project</h3>
+          <p>description.</p>
+        </div>
+
+        <div className='project-item'>
+          <h3>project</h3>
+          <p>description.</p>
+        </div>
+
+        <div className='project-item'>
+          <h3>project</h3>
+          <p>description.</p>
+        </div>
+
+        <div className='project-item'>
+          <h3>project</h3>
+          <p>description.</p>
+        </div>
+
+        <div className='project-item'>
+          <h3>project</h3>
+          <p>description.</p>
+        </div>
+      </div>
+
 
       {/* Contact */}
-      <div className='contact'>
+      <div id="contact" className='contact'>
         <h2>Contact</h2>
         <p><strong>Email:</strong> mubkhan01@gmail.com</p>
         <p><strong>Phone:</strong> (123) 456-7890</p>

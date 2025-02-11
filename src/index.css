@@ -40,6 +40,7 @@ h1 {
 
 }
 
+/* About Me styles */
 .about-me {
     /* background-color: #3a3f44; */
     background-color: #2b3137;
@@ -81,6 +82,9 @@ h1 {
     margin-right: 1rem; /* Add some space between the image and text */
 }
 
+
+
+/* Education styles */
 .education {
     margin-bottom: 40px;
     background-color: #2b3137;
@@ -124,6 +128,7 @@ h1 {
     color: #ff7e5f;
 }
 
+/* Skills styles */
 .skills {
     background-color: #2b3137;
     color: #ecf0f1;
@@ -165,6 +170,50 @@ h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Project styles */
+.projects {
+    margin-top: 40px;
+    background-color: #2b3137;
+    color: #ecf0f1;
+    padding: .5rem 2rem .5rem 2rem;
+    margin: 2rem auto; /* Center the div */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set a maximum width */
+    width: 90%; /* Ensure it looks good on smaller screens */
+    text-align: left; /* Align text to the left */
+}
+  
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+  
+.project-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+.project-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+  
+.project-item p {
+    color: #666;
+}
+
+/* Contact styles */
 .contact {
     background-color: #2b3137;
     color: #ecf0f1;
@@ -239,6 +288,9 @@ h1 {
 
     .about-me, .education, .skills, .contact {
         padding: 1rem;
+        /* align-items: center; */
+        /* justify-content: center; */
+        text-align: center;       
     }
 
 }
