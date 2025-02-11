@@ -1,5 +1,27 @@
+/* Dark Mode (default) */
+:root{
+    --highlight-color: #ff7e5f;
+    --background-color: #24292e;
+    --section-color: #2b3137;
+    --text-color: #fafbfc;
+    --border-color: 1px solid #444;
+    --item-color: #3a3f44;
+    --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Light Mode */
+[data-theme="light"]{
+    --highlight-color: #ff7e5f;
+    --background-color: #ffffff;
+    --section-color: #f0f0f0;
+    --text-color: #24292e;
+    --border-color: 1px solid #ddd;
+    --item-color: #e0e0e0;
+    --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 body{
-    background-color: #24292e;
+    background-color: var(--background-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .app {
@@ -21,18 +43,15 @@ body{
 }
 
 h1 {
-    color: #fafbfc; /* Fallback color */
+    color: var(--text-color);
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 3rem;
     letter-spacing: 2px;
-    /* background: linear-gradient(0deg, #ffffff, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 
 .animation-typing{
-    color:#fafbfc;
+    color: var(--text-color);
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 2.25rem;
@@ -42,13 +61,12 @@ h1 {
 
 /* About Me styles */
 .about-me {
-    /* background-color: #3a3f44; */
-    background-color: #2b3137;
-    color: #ecf0f1;
+    background-color: var(--section-color);
+    color: var(--text-color);
     padding: .5rem 2rem 2rem 2rem;
     margin: 2rem auto; /* Center the div */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-box);
     max-width: 800px; /* Set a maximum width */
     width: 90%; /* Ensure it looks good on smaller screens */
     text-align: left;
@@ -78,21 +96,20 @@ h1 {
     height: 150px;
     border-radius: 50%; /* Make the image round */
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-box);
     margin-right: 1rem; /* Add some space between the image and text */
 }
-
 
 
 /* Education styles */
 .education {
     margin-bottom: 40px;
-    background-color: #2b3137;
-    color: #ecf0f1;
+    background-color: var(--section-color);
+    color: var(--text-color);
     padding: .5rem 2rem .5rem 2rem;
     margin: 2rem auto; /* Center the div */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-box);
     max-width: 800px; /* Set a maximum width */
     width: 90%; /* Ensure it looks good on smaller screens */
     text-align: left; /* Align text to the left */
@@ -101,9 +118,9 @@ h1 {
 .education-item {
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px solid #444;
+    border: var(--border-color);
     border-radius: 5px;
-    background-color: #3a3f44;
+    background-color: var(--item-color);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -115,27 +132,27 @@ h1 {
 .education-item h3 {
     margin: 0;
     font-size: 1.2em;
-    color: #ff7e5f;
+    color: var(--highlight-color);
 }
 
 .education-item p {
     margin: 5px 0;
-    color: #ecf0f1;
+    color: var(--text-color);
 }
 
 .education-item .icon {
     margin-right: 10px;
-    color: #ff7e5f;
+    color: var(--highlight-color);
 }
 
 /* Skills styles */
 .skills {
-    background-color: #2b3137;
-    color: #ecf0f1;
+    background-color: var(--section-color);
+    color: var(--text-color);
     padding: .5rem 2rem .5rem 2rem;
     margin: 2rem auto; /* Center the div */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-box);
     max-width: 800px; /* Set a maximum width */
     width: 90%; /* Ensure it looks good on smaller screens */
     text-align: left; /* Align text to the left */
@@ -155,9 +172,10 @@ h1 {
 }
 
 .skills li {
-    background-color: #3a3f44;
+    background-color: var(--item-color);
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    border: var(--border-color);
     text-align: center;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -173,12 +191,12 @@ h1 {
 /* Project styles */
 .projects {
   margin-top: 40px;
-  background-color: #2b3137;
-  color: #ecf0f1;
+  background-color: var(--section-color);
+  color: var(--text-color);
   padding: .5rem 2rem 2rem 2rem;
   margin: 2rem auto; /* Center the div */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-box);
   max-width: 800px; /* Set a maximum width */
   width: 90%; /* Ensure it looks good on smaller screens */
   text-align: left; /* Align text to the left */
@@ -191,11 +209,11 @@ h1 {
 }
 
 .project-item {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: var(--text-color);
+  border: var(--border-color);
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-box);
   transition: transform 0.3s, box-shadow 0.3s;
   /* text-align: center; */
 }
@@ -207,12 +225,12 @@ h1 {
 
 .project-item h3 {
   margin-top: 0;
-  color: #333;
+  /* color: var(--highlight-color) !important; */
   font-size: 1.2rem;
 }
 
 .project-item p {
-    color: #666;
+    /* color: var(--text-color) !important; */
     font-size: 0.9rem;
 }
   
@@ -223,11 +241,11 @@ h1 {
 }
   
 .project-item {
-    background-color: #3a3f44;
-    border: 1px solid #444;
+    background-color: var(--item-color);
+    border: var(--border-color);
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-box);
     transition: transform 0.3s, box-shadow 0.3s;
 }
   
@@ -239,12 +257,12 @@ h1 {
 .project-item h3 {
     margin-top: 0;
     /* color: #333; */
-    color: #ff7e5f;
+    color: var(--highlight-color);
 }
   
 .project-item p {
     /* color: #666; */
-    color: #ecf0f1;
+    color: var(--text-color);
 }
 
 /* .project-image {
@@ -259,19 +277,19 @@ h1 {
     height: 200px;
     border-radius: 2%; /* Make the image round */
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-box);
     margin-right: 1rem; /* Add some space between the image and text */
 }
 
 
 /* Contact styles */
 .contact {
-    background-color: #2b3137;
-    color: #ecf0f1;
+    background-color: var(--section-color);
+    color: var(--text-color);
     padding: 2rem;
     margin: 2rem auto; /* Center the div */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-box);
     max-width: 800px; /* Set a maximum width */
     width: 90%; /* Ensure it looks good on smaller screens */
     text-align: left; /* Align text to the left */
@@ -289,7 +307,7 @@ h1 {
 }
 
 .contact a {
-    color: #ff7e5f;
+    color: var(--highlight-color);
     text-decoration: none;
 }
 

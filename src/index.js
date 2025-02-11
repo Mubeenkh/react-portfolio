@@ -1,17 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import {ReactTyped} from 'react-typed';
 
 import './index.css';
 
 function App() {
+
+  // Dark Mode and Light Mode
+  const [theme, setTheme] = useState('dark');
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
+  };
+
   return (
     <div className="app">
 
+      {/* Navbar */}
+      {/* <nav className='navbar'>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav> */}
+      
       <div className="main-container">
 
         <div className="header">
           <h1>Welcome to my Portfolio</h1>
+          {/* Button for Dark Mode and Light Mode */}
+          <button onClick={toggleTheme}>
+            {theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+          </button>
         </div>
 
         <div className="animation-typing">
@@ -44,6 +68,8 @@ function App() {
           </div>
 
         </div>
+
+
       </div>
       
 
@@ -126,6 +152,8 @@ function App() {
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubeen-khan-75b48511a" target="_blank" rel="noopener noreferrer">linkedin.com/in/mubeen-khan</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/Mubeenkh" target="_blank" rel="noopener noreferrer">github.com/Mubeenkh</a></p>
       </div>
+
+
     </div>
   )
 }
