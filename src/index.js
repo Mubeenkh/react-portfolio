@@ -1,10 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import {ReactTyped} from 'react-typed';
 
 import './index.css';
 
 function App() {
+
+  // Back to Top Button
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      if (window.scrollY >300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+
+
 
   // Dark Mode and Light Mode
   const [theme, setTheme] = useState('dark');
@@ -25,14 +55,15 @@ function App() {
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            {/* Toggle Switch for Dark Mode and Light Mode */}
+            <label className="toggle-switch">
+              <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
+              <span className="slider"></span>
+            </label>
+          </li>
         </ul>
       </nav>
-      
-      {/* Button for Dark Mode and Light Mode */}
-      <button onClick={toggleTheme}>
-        {theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-      </button>
-
       
       <div className="main-container">
         <div className="header">
@@ -54,7 +85,7 @@ function App() {
         </div>
 
         {/* About-Me */}
-        <div className='about-me'>
+        <div id='about-me' className='about-me'>
 
           <h2>About Me</h2>
           <div className='about-me-content'>
@@ -63,9 +94,12 @@ function App() {
               <img src="./images/profile2.png" alt="Mubeen Khan" className="about-me-image" />
             </div>
 
-            <p>
-              I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
-            </p>
+            <div>
+              <h3>Mubeen Khan</h3>
+              <p>
+                I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and looking for internships to gain experience.
+              </p>
+            </div>
           </div>
 
         </div>
@@ -126,8 +160,8 @@ function App() {
             </div>
 
             <div className='project-item'>
-              <h3>Project</h3>
-              <p>Description.</p>
+              <h3>FitWork</h3>
+              <p></p>
               <div className="project-image-container">
                 <img src="./images/profile.png" alt="Project" className="project-image" />
               </div>
@@ -154,6 +188,11 @@ function App() {
         <p><strong>GitHub:</strong> <a href="https://github.com/Mubeenkh" target="_blank" rel="noopener noreferrer">github.com/Mubeenkh</a></p>
       </div>
 
+      {showButton && (
+        <button onClick={scrollToTop} className='back-to-top'>
+          ↑
+        </button>
+      )}
 
     </div>
   )
