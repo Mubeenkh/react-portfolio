@@ -12,7 +12,8 @@ function App() {
   useEffect(() => {
 
     const handleScroll = () => {
-      if (window.scrollY >300) {
+      // 300 is too long, so I changed it to 100
+      if (window.scrollY >100) {
         setShowButton(true);
       } else {
         setShowButton(false);

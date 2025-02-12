@@ -487,13 +487,13 @@ h1 {
     /* bottom: 20px; */
     bottom: 0;
     /* right: 20px; */
-    right: 50px;
+    right: 15%;
     background-color: var(--highlight-color);
     color: var(--text-color);
     border: none;
     /* border-radius: 20%; */
     border-radius: 10% 10% 0 0;
-    width: 40px;
+    width: 50px;
     height: 40px;
     font-size: 24px;
     cursor: pointer;
