@@ -92,7 +92,7 @@ function App() {
           <div className='about-me-content'>
             {/* another container to keep the circle shape of the image */}
             <div className="about-me-image-container">
-              <img src="./images/profile2.png" alt="Mubeen Khan" className="about-me-image" />
+              <img src="./images/profile.png" alt="Mubeen Khan" className="about-me-image" />
             </div>
 
             <div>
@@ -146,34 +146,38 @@ function App() {
           <div className='projects-grid'>
             <div className='project-item'>
               <h3>Web-based IoT Dashboard</h3>
-              <p>Developed a web-based dashboard to monitor and control IoT devices in real-time using Python and C++.</p>
+              <p>The project aims to design a web-based IoT dashboard that integrates course-learned technologies to capture and analyze data.</p>
               <div className="project-image-container">
-                <img src="./images/profile.png" alt="Project" className="project-image" />
+                <img src="./images/iotdashboard.png" alt="Project" className="project-image" />
               </div>
+              <p>Visit Repo button</p>
+            </div>
+
+            <div className='project-item'>
+              <h3>FitWork</h3>
+              <p>The goal of this project and app is to help users find exercises for specific muscles, learn about healthy foods with important nutrients, and discover stretches and warm-ups to do before and after a workout.</p>
+              <div className="project-image-container">
+                <img src="./images/fitwork.png" alt="Project" className="project-image" />
+              </div>
+              <p>Visit Repo button</p>
             </div>
 
             <div className='project-item'>
               <h3>Inventory Management Website</h3>
               <p>Created an inventory management system with a user-friendly interface and robust backend using PHP, HTML, CSS, and JavaScript.</p>
               <div className="project-image-container">
-                <img src="./images/profile.png" alt="Project" className="project-image" />
+                <img src="./images/sweemory.png" alt="Project" className="project-image" />
               </div>
+              <p>Visit Repo button</p>
             </div>
 
             <div className='project-item'>
-              <h3>FitWork</h3>
-              <p></p>
+              <h3>GUI-based Game Application</h3>
+              <p>Veritas is a GUI-based game where users answer topic-based questions within a set time to earn points. The goal is to test knowledge while keeping players entertained.</p>
               <div className="project-image-container">
-                <img src="./images/profile.png" alt="Project" className="project-image" />
+                <img src="./images/veritas.png" alt="Project" className="project-image" />
               </div>
-            </div>
-
-            <div className='project-item'>
-              <h3>Project</h3>
-              <p>Description.</p>
-              <div className="project-image-container">
-                <img src="./images/profile.png" alt="Project" className="project-image" />
-              </div>
+              <p>Visit Repo button</p>
             </div>
             
           </div>
@@ -184,7 +188,7 @@ function App() {
       <div id="contact" className='contact'>
         <h2>Contact</h2>
         <p><strong>Email:</strong> mubkhan01@gmail.com</p>
-        <p><strong>Phone:</strong> (123) 456-7890</p>
+        {/* <p><strong>Phone:</strong> (123) 456-7890</p> */}
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubeen-khan-75b48511a" target="_blank" rel="noopener noreferrer">linkedin.com/in/mubeen-khan</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/Mubeenkh" target="_blank" rel="noopener noreferrer">github.com/Mubeenkh</a></p>
       </div>
