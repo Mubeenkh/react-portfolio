@@ -34,9 +34,6 @@ function App() {
     });
   };
 
-
-
-
   // Dark Mode and Light Mode
   const [theme, setTheme] = useState('dark');
   const toggleTheme = () => {
@@ -73,15 +70,15 @@ function App() {
 
         <div className="animation-typing">
           <ReactTyped
-          strings={[
-            "Hi, my name is Mubeen Khan",
-            "I am a Computer Science Student",
-            "No... I am not related to KhanAcademy",
-          ]}
-          typeSpeed={30}
-          backSpeed={50}
-          backDelay={2000}
-          loop
+            strings={[
+              "Hi, my name is Mubeen Khan",
+              "I am a Computer Science Student",
+              "No... I am not related to KhanAcademy",
+            ]}
+            typeSpeed={30}
+            backSpeed={50}
+            backDelay={2000}
+            loop
           />
         </div>
 
@@ -145,7 +142,7 @@ function App() {
               <h3>Web-based IoT Dashboard</h3>
               <p>The project aims to design a web-based IoT dashboard that integrates course-learned technologies to capture and analyze data.</p>
               <div className="project-image-container">
-                <img src="./images/iotdashboard.png" alt="Project" className="project-image" />
+                <img src="./images/projects/iotdashboard.png" alt="Project" className="project-image" />
               </div>
               <a className='visit-repo-button' href='https://github.com/Mubeenkh/IoT_Final_Project' target='_blank'>Visit Repo</a>
             </div>
@@ -154,7 +151,7 @@ function App() {
               <h3>FitWork</h3>
               <p>The goal of this project and app is to help users find exercises for specific muscles, learn about healthy foods with important nutrients, and discover stretches and warm-ups to do before and after a workout.</p>
               <div className="project-image-container">
-                <img src="./images/fitwork.png" alt="Project" className="project-image" />
+                <img src="./images/projects/fitwork.png" alt="Project" className="project-image" />
               </div>
               <a className='visit-repo-button' href='https://github.com/Mubeenkh/FitWork' target='_blank'>Visit Repo</a>
             </div>
@@ -163,7 +160,7 @@ function App() {
               <h3>Inventory Management Website</h3>
               <p>Created an inventory management system with a user-friendly interface and robust backend using PHP, HTML, CSS, and JavaScript.</p>
               <div className="project-image-container">
-                <img src="./images/sweemory.png" alt="Project" className="project-image" />
+                <img src="./images/projects/sweemory.png" alt="Project" className="project-image" />
               </div>
               <a className='visit-repo-button' href='https://github.com/Deven8378/TeamProjectW23' target='_blank'>Visit Repo</a>
             </div>
@@ -172,7 +169,16 @@ function App() {
               <h3>GUI-based Game Application</h3>
               <p>Veritas is a GUI-based game where users answer topic-based questions within a set time to earn points. The goal is to test knowledge while keeping players entertained.</p>
               <div className="project-image-container">
-                <img src="./images/veritas.png" alt="Project" className="project-image" />
+                <img src="./images/projects/veritas.png" alt="Project" className="project-image" />
+              </div>
+              <a className='visit-repo-button' href='https://github.com/Mubeenkh/VeritasProject' target='_blank'>Visit Repo</a>
+            </div>
+
+            <div className='project-item'>
+              <h3>Game Programming</h3>
+              <p></p>
+              <div className="project-image-container">
+                <img src="./images/projects/game-prog-project.png" alt="Project" className="project-image" />
               </div>
               <a className='visit-repo-button' href='https://github.com/Mubeenkh/VeritasProject' target='_blank'>Visit Repo</a>
             </div>

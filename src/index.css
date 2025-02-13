@@ -480,6 +480,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
+    .navbar{
+        content: none;
+    }
     /* Mobile view */
     h2{
         justify-content: center;
