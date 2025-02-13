@@ -104,10 +104,7 @@ function App() {
           </div>
 
         </div>
-
-
       </div>
-      
 
       {/* Education */}
       <div id="education" className='education'>
@@ -150,7 +147,7 @@ function App() {
               <div className="project-image-container">
                 <img src="./images/iotdashboard.png" alt="Project" className="project-image" />
               </div>
-              <p>Visit Repo button</p>
+              <a className='visit-repo-button' href='https://github.com/Mubeenkh/IoT_Final_Project' target='_blank'>Visit Repo</a>
             </div>
 
             <div className='project-item'>
@@ -159,7 +156,7 @@ function App() {
               <div className="project-image-container">
                 <img src="./images/fitwork.png" alt="Project" className="project-image" />
               </div>
-              <p>Visit Repo button</p>
+              <a className='visit-repo-button' href='https://github.com/Mubeenkh/FitWork' target='_blank'>Visit Repo</a>
             </div>
 
             <div className='project-item'>
@@ -168,7 +165,7 @@ function App() {
               <div className="project-image-container">
                 <img src="./images/sweemory.png" alt="Project" className="project-image" />
               </div>
-              <p>Visit Repo button</p>
+              <a className='visit-repo-button' href='https://github.com/Deven8378/TeamProjectW23' target='_blank'>Visit Repo</a>
             </div>
 
             <div className='project-item'>
@@ -177,7 +174,7 @@ function App() {
               <div className="project-image-container">
                 <img src="./images/veritas.png" alt="Project" className="project-image" />
               </div>
-              <p>Visit Repo button</p>
+              <a className='visit-repo-button' href='https://github.com/Mubeenkh/VeritasProject' target='_blank'>Visit Repo</a>
             </div>
             
           </div>

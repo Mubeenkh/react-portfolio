@@ -314,43 +314,43 @@ h1 {
 
 /* Project styles */
 .projects {
-  margin-top: 40px;
-  background-color: var(--section-color);
-  color: var(--text-color);
-  padding: .5rem 2rem 2rem 2rem;
-  margin: 2rem auto; /* Center the div */
-  border-radius: 10px;
-  box-shadow: var(--shadow-box);
-  max-width: 800px; /* Set a maximum width */
-  width: 90%; /* Ensure it looks good on smaller screens */
-  text-align: left; /* Align text to the left */
+    margin-top: 40px;
+    background-color: var(--section-color);
+    color: var(--text-color);
+    padding: .5rem 2rem 2rem 2rem;
+    margin: 2rem auto; /* Center the div */
+    border-radius: 10px;
+    box-shadow: var(--shadow-box);
+    max-width: 800px; /* Set a maximum width */
+    width: 90%; /* Ensure it looks good on smaller screens */
+    text-align: left; /* Align text to the left */
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .project-item {
-  background-color: var(--text-color);
-  border: var(--border-color);
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: var(--shadow-box);
-  transition: transform 0.3s, box-shadow 0.3s;
-  /* text-align: center; */
+    background-color: var(--text-color);
+    border: var(--border-color);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: var(--shadow-box);
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* text-align: center; */
 }
 
 .project-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-item h3 {
-  margin-top: 0;
-  /* color: var(--highlight-color) !important; */
-  font-size: 1.2rem;
+    margin-top: 0;
+    /* color: var(--highlight-color) !important; */
+    font-size: 1.2rem;
 }
 
 .project-item p {
@@ -365,6 +365,11 @@ h1 {
 }
   
 .project-item {
+    /* needed to put button on right side */
+    display: flex;
+    flex-direction: column;
+    /* --- */
+    
     background-color: var(--item-color);
     border: var(--border-color);
     border-radius: 5px;
@@ -372,7 +377,6 @@ h1 {
     box-shadow: var(--shadow-box);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
   
 .project-item:hover {
     transform: translateY(-5px);
@@ -387,15 +391,9 @@ h1 {
   
 .project-item p {
     /* color: #666; */
+    margin-top: 0;
     color: var(--text-color);
 }
-
-/* .project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-} */
 
 .project-image {
     width: 100%;
@@ -406,6 +404,26 @@ h1 {
     margin-right: 1rem; /* Add some space between the image and text */
 }
 
+.project-item a {
+    align-self: flex-end;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
 
 /* Contact styles */
 .contact {
@@ -508,9 +526,9 @@ h1 {
     cursor: pointer;
     box-shadow: var(--shadow-box);
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .back-to-top:hover {
+}
+
+.back-to-top:hover {
     background-color: var(--hover-color);
     color: var(--background-color);
-  }
+}
