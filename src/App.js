@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ReactTyped } from 'react-typed';
 
+import Navbar from './navbar';
+import Hamburger from './hamburger';
 
 function App() {
 
@@ -31,28 +33,37 @@ function App() {
             behavior: 'smooth',
         });
     };
+    
 
-    // Dark Mode and Light Mode
-    const [theme, setTheme] = useState('dark');
-    const toggleTheme = () => {
-        const newTheme = theme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-        document.documentElement.setAttribute('data-theme', newTheme);
-    };
+    // if the screen size is mobile, then show the hamburger menu. Otherwise, show the navbar.
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
 
+        // Check on initial render
+        handleResize();
 
-    // Hamburger Menu State
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
 
     return (
         <div className="app">
+            {isMobile ? (
+                // <h1>The screen size is mobile.</h1>
+                <Hamburger />
+            ) : (
+                // <h1>The screen size is not mobile.</h1>
+                <Navbar />
+            )}
 
-            {/* Navbar */}
-            <nav className="navbar" id="navbar">
+              {/* Navbar */}
+            {/*<nav className="navbar" id="navbar">
                 <ul>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#education">Education</a></li>
@@ -60,17 +71,17 @@ function App() {
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
-                        {/* Toggle Switch for Dark Mode and Light Mode */}
+                        Toggle Switch for Dark Mode and Light Mode 
                         <label className="toggle-switch">
                             <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
                             <span className="slider"></span>
                         </label>
                     </li>
                 </ul>
-            </nav>
+            </nav> */}
 
             {/* Hamburger Menu */}
-            <div className="hamburger-menu">
+            {/* <div className="hamburger-menu">
                 <div className="menu-icon" onClick={toggleMenu}>
                     <span className="nav-icon"></span>
                     <span className="nav-icon"></span>
@@ -85,7 +96,7 @@ function App() {
                             <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
                             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
                             <li>
-                                {/* Toggle Switch for Dark Mode and Light Mode */}
+                                Toggle Switch for Dark Mode and Light Mode
                                 <label className="toggle-switch">
                                     <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
                                     <span className="slider"></span>
@@ -94,7 +105,7 @@ function App() {
                         </ul>
                     </div>
                 )}
-            </div>
+            </div> */}
 
 
             <div className="main-container">
