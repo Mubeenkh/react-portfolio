@@ -1,12 +1,13 @@
-
-html{
-    scroll-behavior: smooth !important; /* navbar smooth scrolling */
-    scrollbar-width: none !important;  /* removes scrollbar */
+html {
+    scroll-behavior: smooth !important;
+    /* navbar smooth scrolling */
+    scrollbar-width: none !important;
+    /* removes scrollbar */
 }
 
 /* Dark Mode (default) */
 
-:root{
+:root {
     --highlight-color: #ff4c4c;
     --background-color: #0d0d0d;
     --section-color: #1a1a1a;
@@ -20,13 +21,13 @@ html{
 
 
 /* Light Mode */
-[data-theme="light"]{
-    --highlight-color: #ff7e5f; 
-    --background-color: #f5f5f5; 
-    --section-color: #ffffff; 
-    --text-color: #333333; 
-    --border-color: 1px solid #ddd; 
-    --item-color: #e0e0e0; 
+[data-theme="light"] {
+    --highlight-color: #ff7e5f;
+    --background-color: #f5f5f5;
+    --section-color: #ffffff;
+    --text-color: #333333;
+    --border-color: 1px solid #ddd;
+    --item-color: #e0e0e0;
     --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
     --hover-color: #ff9f80;
 }
@@ -35,7 +36,7 @@ html{
     text-shadow: var(--highlight-glow);
 } */
 
-body{
+body {
     background-color: var(--background-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -58,7 +59,7 @@ body{
 
     margin: 0.1rem 0 0 0;
 }
-  
+
 .toggle-switch input {
     opacity: 0;
     width: 0;
@@ -93,11 +94,11 @@ body{
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: var(--highlight-color);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     /* important to resize toggle */
     transform: translateX(20px);
 }
@@ -109,7 +110,8 @@ input:checked + .slider:before {
     border-radius: 10px;
     box-shadow: var(--shadow-box);
     padding: 1rem 2rem 1rem 2rem;
-    margin: 1rem auto; /* Center the div */
+    margin: 1rem auto;
+    /* Center the div */
     max-width: 800px;
     width: 90%;
 
@@ -120,8 +122,13 @@ input:checked + .slider:before {
     transition: background-color 0.3s, box-shadow 0.3s; */
 }
 
+.navbar.hidden {
+    display: none;
+}
+
 .navbar ul {
-    list-style-type: none; /* Remove Dots from list */
+    list-style-type: none;
+    /* Remove Dots from list */
     margin: 0;
     padding: 0;
     display: flex;
@@ -147,15 +154,91 @@ input:checked + .slider:before {
     box-shadow: var(--highlight-glow);
 }
 
+.hamburger-menu {
+    position: fixed;
+    bottom: 70px;
+    /* Adjust this value to place it right above the back-to-top button */
+    right: 20px;
+    z-index: 1000;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+
+.menu-icon .nav-icon {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: 0.4s;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    /* Adjust this value to place it right above the hamburger menu icon */
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s forwards;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+
+
 
 /* Make main-container and header 100vh and centered */
-.main-container{
+.main-container {
     /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .header {
     margin-bottom: 1rem;
 }
@@ -168,7 +251,7 @@ h1 {
     letter-spacing: 2px;
 }
 
-.animation-typing{
+.animation-typing {
     color: var(--text-color);
     font-size: 1.25rem;
     font-weight: 600;
@@ -182,11 +265,14 @@ h1 {
     background-color: var(--section-color);
     color: var(--text-color);
     padding: .5rem 2rem 2rem 2rem;
-    margin: 2rem auto; /* Center the div */
+    margin: 2rem auto;
+    /* Center the div */
     border-radius: 10px;
     box-shadow: var(--shadow-box);
-    max-width: 800px; /* Set a maximum width */
-    width: 90%; /* Ensure it looks good on smaller screens */
+    max-width: 800px;
+    /* Set a maximum width */
+    width: 90%;
+    /* Ensure it looks good on smaller screens */
     text-align: left;
     height: 50%;
 }
@@ -212,13 +298,15 @@ h1 {
 .about-me-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Make the image round */
+    border-radius: 50%;
+    /* Make the image round */
     object-fit: cover;
     box-shadow: var(--shadow-box);
-    margin-right: 1rem; /* Add some space between the image and text */
+    margin-right: 1rem;
+    /* Add some space between the image and text */
 }
 
-.about-me-content h3{
+.about-me-content h3 {
     margin: 0 0 1rem 0;
     font-size: 1.5rem;
     color: var(--highlight-color);
@@ -231,12 +319,16 @@ h1 {
     background-color: var(--section-color);
     color: var(--text-color);
     padding: .5rem 2rem .5rem 2rem;
-    margin: 2rem auto; /* Center the div */
+    margin: 2rem auto;
+    /* Center the div */
     border-radius: 10px;
     box-shadow: var(--shadow-box);
-    max-width: 800px; /* Set a maximum width */
-    width: 90%; /* Ensure it looks good on smaller screens */
-    text-align: left; /* Align text to the left */
+    max-width: 800px;
+    /* Set a maximum width */
+    width: 90%;
+    /* Ensure it looks good on smaller screens */
+    text-align: left;
+    /* Align text to the left */
 }
 
 .education-item {
@@ -274,12 +366,16 @@ h1 {
     background-color: var(--section-color);
     color: var(--text-color);
     padding: .5rem 2rem .5rem 2rem;
-    margin: 2rem auto; /* Center the div */
+    margin: 2rem auto;
+    /* Center the div */
     border-radius: 10px;
     box-shadow: var(--shadow-box);
-    max-width: 800px; /* Set a maximum width */
-    width: 90%; /* Ensure it looks good on smaller screens */
-    text-align: left; /* Align text to the left */
+    max-width: 800px;
+    /* Set a maximum width */
+    width: 90%;
+    /* Ensure it looks good on smaller screens */
+    text-align: left;
+    /* Align text to the left */
 }
 
 .skills h2 {
@@ -291,7 +387,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    list-style-type: none; /* Remove default list styling */
+    list-style-type: none;
+    /* Remove default list styling */
     padding: 0;
 }
 
@@ -318,12 +415,16 @@ h1 {
     background-color: var(--section-color);
     color: var(--text-color);
     padding: .5rem 2rem 2rem 2rem;
-    margin: 2rem auto; /* Center the div */
+    margin: 2rem auto;
+    /* Center the div */
     border-radius: 10px;
     box-shadow: var(--shadow-box);
-    max-width: 800px; /* Set a maximum width */
-    width: 90%; /* Ensure it looks good on smaller screens */
-    text-align: left; /* Align text to the left */
+    max-width: 800px;
+    /* Set a maximum width */
+    width: 90%;
+    /* Ensure it looks good on smaller screens */
+    text-align: left;
+    /* Align text to the left */
 }
 
 .projects-grid {
@@ -357,19 +458,19 @@ h1 {
     /* color: var(--text-color) !important; */
     font-size: 0.9rem;
 }
-  
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
-  
+
 .project-item {
     /* needed to put button on right side */
     display: flex;
     flex-direction: column;
     /* --- */
-    
+
     background-color: var(--item-color);
     border: var(--border-color);
     border-radius: 5px;
@@ -377,19 +478,19 @@ h1 {
     box-shadow: var(--shadow-box);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-  
+
 .project-item:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-  
+
 .project-item h3 {
     margin-top: 0;
     /* color: #333; */
     color: var(--highlight-color);
 }
-  
+
 .project-item p {
     /* color: #666; */
     margin-top: 0;
@@ -399,10 +500,12 @@ h1 {
 .project-image {
     width: 100%;
     height: 200px;
-    border-radius: 2%; /* Make the image round */
+    border-radius: 2%;
+    /* Make the image round */
     object-fit: cover;
     box-shadow: var(--shadow-box);
-    margin-right: 1rem; /* Add some space between the image and text */
+    margin-right: 1rem;
+    /* Add some space between the image and text */
 }
 
 .project-item a {
@@ -435,12 +538,16 @@ h1 {
     background-color: var(--section-color);
     color: var(--text-color);
     padding: 2rem;
-    margin: 2rem auto; /* Center the div */
+    margin: 2rem auto;
+    /* Center the div */
     border-radius: 10px;
     box-shadow: var(--shadow-box);
-    max-width: 800px; /* Set a maximum width */
-    width: 90%; /* Ensure it looks good on smaller screens */
-    text-align: left; /* Align text to the left */
+    max-width: 800px;
+    /* Set a maximum width */
+    width: 90%;
+    /* Ensure it looks good on smaller screens */
+    text-align: left;
+    /* Align text to the left */
 }
 
 .contact h2 {
@@ -460,12 +567,13 @@ h1 {
 }
 
 .contact a:hover {
-    color: #007BFF;    
+    color: #007BFF;
     text-decoration: underline;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 1024px) {
+
     /* Tablet view */
     .about-me-content {
         flex-direction: row;
@@ -478,24 +586,30 @@ h1 {
         margin-bottom: 0;
     }
 
-    .about-me, .education, .skills, .projects, .contact {
+    .about-me,
+    .education,
+    .skills,
+    .projects,
+    .contact {
         padding: 1rem 2rem;
     }
 
-    
+
 }
 
 @media (max-width: 768px) {
 
-    .navbar{
+    .navbar {
         content: none;
     }
+
     /* Mobile view */
-    h2{
+    h2 {
         justify-content: center;
         align-items: center;
         text-align: center;
     }
+
     .about-me-content {
         flex-direction: column;
         align-items: center;
@@ -508,11 +622,15 @@ h1 {
         margin-bottom: 1rem;
     }
 
-    .about-me, .education, .skills, .projects, .contact {
+    .about-me,
+    .education,
+    .skills,
+    .projects,
+    .contact {
         padding: 1rem;
         /* align-items: center; */
         /* justify-content: center; */
-        text-align: center;       
+        text-align: center;
     }
 
 }
