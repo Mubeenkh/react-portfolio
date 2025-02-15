@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 
+// import './hamburger.css';
+
+import ToggleSwitchMode from './toggle-switch-mode';
 
 function Hamburger() {
 
     // Dark Mode and Light Mode
-    const [theme, setTheme] = useState('dark');
-    const toggleTheme = () => {
-        const newTheme = theme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-        document.documentElement.setAttribute('data-theme', newTheme);
-    };
+    // const [theme, setTheme] = useState('dark');
+    // const toggleTheme = () => {
+    //     const newTheme = theme === 'dark' ? 'light' : 'dark';
+    //     setTheme(newTheme);
+    //     document.documentElement.setAttribute('data-theme', newTheme);
+    // };
 
     // Hamburger Menu State
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,10 +38,11 @@ function Hamburger() {
                         <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
                         <li>
                             {/* Toggle Switch for Dark Mode and Light Mode */}
-                            <label className="toggle-switch">
+                            {/* <label className="toggle-switch">
                                 <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
                                 <span className="slider"></span>
-                            </label>
+                            </label> */}
+                            <ToggleSwitchMode />
                         </li>
                     </ul>
                 </div>
