@@ -21,14 +21,14 @@ html{
 
 /* Light Mode */
 [data-theme="light"]{
-    --highlight-color: #ff7e5f; /* Coral */
-    --background-color: #f5f5f5; /* Light Gray */
-    --section-color: #ffffff; /* White */
-    --text-color: #333333; /* Dark Gray */
-    --border-color: 1px solid #ddd; /* Light Gray */
-    --item-color: #e0e0e0; /* Light Gray */
-    --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-    --hover-color: #ff9f80; /* Lighter Coral */
+    --highlight-color: #ff7e5f; 
+    --background-color: #f5f5f5; 
+    --section-color: #ffffff; 
+    --text-color: #333333; 
+    --border-color: 1px solid #ddd; 
+    --item-color: #e0e0e0; 
+    --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-color: #ff9f80;
 }
 
 /* .header h1, .about-me h2, .education h2, .skills h2, .projects h2, .contact h2 {
@@ -379,7 +379,8 @@ h1 {
 }
   
 .project-item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
   
@@ -425,6 +426,10 @@ h1 {
     color: var(--text-color);
 }
 
+.visit-repo-button:hover {
+    text-decoration: underline;
+}
+
 /* Contact styles */
 .contact {
     background-color: var(--section-color);
@@ -455,6 +460,7 @@ h1 {
 }
 
 .contact a:hover {
+    color: #007BFF;    
     text-decoration: underline;
 }
 
