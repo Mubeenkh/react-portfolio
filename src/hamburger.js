@@ -6,18 +6,20 @@ import ToggleSwitchMode from './toggle-switch-mode';
 
 function Hamburger() {
 
-    // Dark Mode and Light Mode
-    // const [theme, setTheme] = useState('dark');
-    // const toggleTheme = () => {
-    //     const newTheme = theme === 'dark' ? 'light' : 'dark';
-    //     setTheme(newTheme);
-    //     document.documentElement.setAttribute('data-theme', newTheme);
-    // };
-
     // Hamburger Menu State
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    
+    // Dark Mode and Light Mode
+    const [theme, setTheme] = useState('dark');
+
+    const toggleTheme = () => {
+        const newTheme = theme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+        document.documentElement.setAttribute('data-theme', newTheme);
     };
 
     return (
@@ -37,12 +39,12 @@ function Hamburger() {
                         <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
                         <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
                         <li>
-                            {/* Toggle Switch for Dark Mode and Light Mode */}
-                            {/* <label className="toggle-switch">
-                                <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
-                                <span className="slider"></span>
-                            </label> */}
-                            <ToggleSwitchMode />
+                        {/* // Toggle Switch for Dark Mode and Light Mode */}
+                        <label className="toggle-switch">
+                            <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
+                            <span className="slider"></span>
+                        </label>
+                        {/* <ToggleSwitchMode /> */}
                         </li>
                     </ul>
                 </div>

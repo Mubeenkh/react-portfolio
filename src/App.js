@@ -62,52 +62,6 @@ function App() {
                 <Navbar />
             )}
 
-              {/* Navbar */}
-            {/*<nav className="navbar" id="navbar">
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li>
-                        Toggle Switch for Dark Mode and Light Mode 
-                        <label className="toggle-switch">
-                            <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
-                            <span className="slider"></span>
-                        </label>
-                    </li>
-                </ul>
-            </nav> */}
-
-            {/* Hamburger Menu */}
-            {/* <div className="hamburger-menu">
-                <div className="menu-icon" onClick={toggleMenu}>
-                    <span className="nav-icon"></span>
-                    <span className="nav-icon"></span>
-                    <span className="nav-icon"></span>
-                </div>
-                {isMenuOpen && (
-                    <div className="menu">
-                        <ul>
-                            <li><a href="#about-me" onClick={toggleMenu}>About Me</a></li>
-                            <li><a href="#education" onClick={toggleMenu}>Education</a></li>
-                            <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
-                            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-                            <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-                            <li>
-                                Toggle Switch for Dark Mode and Light Mode
-                                <label className="toggle-switch">
-                                    <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
-                                    <span className="slider"></span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                )}
-            </div> */}
-
-
             <div className="main-container">
                 <div className="header">
                     <h1>Welcome to my Portfolio</h1>
