@@ -94,7 +94,7 @@ function App() {
                         <div>
                             <h3>Mubeen Khan</h3>
                             <p>
-                                I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and ready to learn new things.
+                                I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and eager to explore new technologies.
                             </p>
                         </div>
                     </div>
