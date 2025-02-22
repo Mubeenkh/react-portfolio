@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-// import './hamburger.css';
+import './menu.css';
 
 import ToggleSwitchMode from './toggle-switch-mode';
 

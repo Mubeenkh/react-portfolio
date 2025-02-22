@@ -6,7 +6,6 @@ html {
 }
 
 /* Dark Mode (default) */
-
 :root {
     --highlight-color: #ff4c4c;
     --background-color: #0d0d0d;
@@ -154,10 +153,10 @@ input:checked+.slider:before {
     box-shadow: var(--highlight-glow);
 }
 
+/* Hamburger Style */
 .hamburger-menu {
     position: fixed;
     bottom: 70px;
-    /* Adjust this value to place it right above the back-to-top button */
     right: 20px;
     z-index: 1000;
 }
@@ -182,18 +181,34 @@ input:checked+.slider:before {
     display: none;
     position: fixed;
     bottom: 120px;
-    /* Adjust this value to place it right above the hamburger menu icon */
     right: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    animation: slideIn 0.3s forwards;
+    background-color: var(--section-color); /* Use section color for better contrast */
+    border: 2px solid var(--highlight-color); /* Add border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    animation: slideIn 0.3s forwards, fadeIn 0.3s forwards;
+    padding: 1rem;
+    width: 200px;
+    z-index: 1001; /* Ensure it is above other elements */
+    opacity: 0; /* Start hidden */
+    transform: translateY(10px); /* Start slightly below */
+}
+
+.menu.open {
+    display: block;
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up */
+}
+
+.menu.close {
+    animation: slideOut 0.3s forwards, fadeOut 0.3s forwards;
+    opacity: 0; /* Fade out */
+    transform: translateY(10px); /* Slide down */
 }
 
 .menu ul {
     list-style: none;
-    padding: 10px;
+    padding: 0;
     margin: 0;
 }
 
@@ -201,15 +216,57 @@ input:checked+.slider:before {
     margin: 10px 0;
 }
 
+.menu ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: var(--hover-color); /* Change to hover color for better contrast */
+    color: var(--background-color); /* Change to background color for better contrast */
+}
+
 @keyframes slideIn {
     from {
         opacity: 0;
         transform: translateY(10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
 
@@ -225,6 +282,15 @@ input:checked+.slider:before {
     .menu {
         display: block;
     }
+}
+
+/* Make main-container and header 100vh and centered */
+.main-container {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -654,9 +720,12 @@ h1 {
     cursor: pointer;
     box-shadow: var(--shadow-box);
     transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
 }
 
 .back-to-top:hover {
     background-color: var(--hover-color);
     color: var(--background-color);
 }
+
+

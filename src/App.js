@@ -62,7 +62,7 @@ function App() {
                 <Navbar />
             )}
 
-            <div className="main-container">
+            <div className="main-container" id="home">
                 <div className="header">
                     <h1>Welcome to my Portfolio</h1>
                 </div>
@@ -196,9 +196,12 @@ function App() {
             </div>
 
             {showButton && (
-                <button onClick={scrollToTop} className='back-to-top'>
+                // <button onClick={scrollToTop} className='back-to-top'>
+                //     ↑
+                // </button>
+                <a href='#home' onClick={scrollToTop} className='back-to-top'>
                     ↑
-                </button>
+                </a>
             )}
 
         </div>
