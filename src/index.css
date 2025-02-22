@@ -231,6 +231,16 @@ input:checked+.slider:before {
     color: var(--background-color); /* Change to background color for better contrast */
 }
 
+.hamburger-menu .menu {
+    display: none;
+    pointer-events: none;
+}
+
+.hamburger-menu .menu.open {
+    display: block;
+    pointer-events: auto;
+}
+
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -717,5 +727,3 @@ h1 {
     background-color: var(--hover-color);
     color: var(--background-color);
 }
-
-

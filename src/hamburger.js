@@ -11,7 +11,6 @@ function Hamburger() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
     
     // Dark Mode and Light Mode
     const [theme, setTheme] = useState('dark');
