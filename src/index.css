@@ -6,8 +6,7 @@ html {
 }
 
 /* Dark Mode (default) */
-
-:root {
+/* :root {
     --highlight-color: #ff4c4c;
     --background-color: #0d0d0d;
     --section-color: #1a1a1a;
@@ -17,11 +16,22 @@ html {
     --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.5);
     --hover-color: #ff6666;
     --highlight-glow: 0 0 10px rgba(255, 76, 76, 0.7);
+} */
+
+:root {
+    --highlight-color: #ff4c4c;
+    --background-color: #121212;
+    --section-color: #121212;
+    --text-color: #e0e0e0;
+    --border-color: 1px solid #333;
+    --item-color: #1e1e1e;
+    --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.5);
+    --hover-color: #ff6666;
+    --highlight-glow: 0 0 10px rgba(255, 76, 76, 0.7);
 }
 
-
 /* Light Mode */
-[data-theme="light"] {
+/* [data-theme="light"] {
     --highlight-color: #ff7e5f;
     --background-color: #f5f5f5;
     --section-color: #ffffff;
@@ -30,7 +40,20 @@ html {
     --item-color: #e0e0e0;
     --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
     --hover-color: #ff9f80;
+} */
+
+[data-theme="light"] {
+    --highlight-color: #ff7e5f;
+    --background-color: #ffffff;
+    --section-color: #ffffff;
+    --text-color: #333333;
+    --border-color: 1px solid #ddd;
+    --item-color: #f0f0f0;
+    --shadow-box: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --hover-color: #ff9f80;
 }
+
+
 
 /* .header h1, .about-me h2, .education h2, .skills h2, .projects h2, .contact h2 {
     text-shadow: var(--highlight-glow);
