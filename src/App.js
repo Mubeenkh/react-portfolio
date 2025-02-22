@@ -53,7 +53,7 @@ function App() {
 
 
     return (
-        <div className="app">
+        <div className="app"  id="home">
             {isMobile ? (
                 // <h1>The screen size is mobile.</h1>
                 <Hamburger />
@@ -62,7 +62,7 @@ function App() {
                 <Navbar />
             )}
 
-            <div className="main-container" id="home">
+            <div className="main-container">
                 <div className="header">
                     <h1>Welcome to my Portfolio</h1>
                 </div>
