@@ -6,6 +6,7 @@ html {
 }
 
 /* Dark Mode (default) */
+
 :root {
     --highlight-color: #ff4c4c;
     --background-color: #0d0d0d;
@@ -283,17 +284,6 @@ input:checked+.slider:before {
         display: block;
     }
 }
-
-/* Make main-container and header 100vh and centered */
-.main-container {
-    /* height: 100vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 
 /* Make main-container and header 100vh and centered */
@@ -720,7 +710,6 @@ h1 {
     cursor: pointer;
     box-shadow: var(--shadow-box);
     transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
 }
 
 .back-to-top:hover {
