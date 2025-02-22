@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 
-// import './toggle-switch-mode.css';
-
-
 function ToggleSwitchMode() {
-
 
     // Dark Mode and Light Mode
     const [theme, setTheme] = useState('dark');
@@ -14,7 +10,6 @@ function ToggleSwitchMode() {
         setTheme(newTheme);
         document.documentElement.setAttribute('data-theme', newTheme);
     };
-
 
     return (
         // Toggle Switch for Dark Mode and Light Mode

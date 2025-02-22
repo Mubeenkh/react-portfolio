@@ -1,18 +1,8 @@
 import React, {useState} from 'react';
 
-// import './menu.css';
-
 import ToggleSwitchMode from './toggle-switch-mode';
 
 function Navbar() {
-
-    // Dark Mode and Light Mode
-    // const [theme, setTheme] = useState('dark');
-    // const toggleTheme = () => {
-    //     const newTheme = theme === 'dark' ? 'light' : 'dark';
-    //     setTheme(newTheme);
-    //     document.documentElement.setAttribute('data-theme', newTheme);
-    // };
 
     return (
         //Navbar
@@ -24,11 +14,6 @@ function Navbar() {
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    {/* Toggle Switch for Dark Mode and Light Mode */}
-                    {/* <label className="toggle-switch">
-                        <input type="checkbox" onChange={toggleTheme} checked={theme === 'light'} />
-                        <span className="slider"></span>
-                    </label> */}
                     <ToggleSwitchMode />
                 </li>
             </ul>
