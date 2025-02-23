@@ -88,7 +88,7 @@ function App() {
                     <div className='about-me-content'>
                         {/* another container to keep the circle shape of the image */}
                         <div className="about-me-image-container">
-                            <img src="./images/profile.png" alt="Mubeen Khan" className="about-me-image" />
+                            <img src="./images/Profile3.jpg" alt="Mubeen Khan" className="about-me-image" />
                         </div>
 
                         <div>
