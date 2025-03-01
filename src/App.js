@@ -192,7 +192,8 @@ function App() {
                 <p><strong>Email:</strong> mubkhan01@gmail.com</p>
                 {/* <p><strong>Phone:</strong> (123) 456-7890</p> */}
                 <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubeen-khan-75b48511a" target="_blank" rel="noopener noreferrer">linkedin.com/in/mubeen-khan</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Mubeenkh" target="_blank" rel="noopener noreferrer">github.com/Mubeenkh</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Mubeenkh" target="_blank" rel="noopener noreferrer" >github.com/Mubeenkh</a></p>
+                <p><strong>Portfolio Github:</strong> <a href="https://github.com/Mubeenkh/react-portfolio" target='_blank' rel="noopener noreferrer">github.com/Mubeenkh/react-portfolio</a></p>
             </div>
 
             {showButton && (

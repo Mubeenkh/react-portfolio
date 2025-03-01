@@ -1,6 +1,8 @@
 # React-Portfolio
-Using React to make my portfolio.\
-This is my first time using react so don't judge...
+Using React to make my portfolio.
+
+Welcome to my React-based portfolio. This project showcases my skills and projects using a modern, responsive design.
+
 
 # Getting Started with Create React App
 
