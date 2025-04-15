@@ -179,7 +179,16 @@ function App() {
                         <div className="project-image-container">
                             <img src="./images/projects/game-prog-project.png" alt="Project" className="project-image" />
                         </div>
-                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/VeritasProject' target='_blank'>Visit Repo</a>
+                        <a className='visit-repo-button' href='https://github.com/GoldyBlocksLOL/GameProg2Project' target='_blank'>Visit Repo</a>
+                    </div>
+
+                    <div className='project-item'>
+                        <h3>Prime Number Determination</h3>
+                        <p>Write a complete Intel x86 assembly language program which determines whether a byte sized operand stored in memory location number is prime or not. </p>
+                        <div className="project-image-container">
+                            <img src="./images/projects/nasm-icon.png" alt="Project" className="project-image" />
+                        </div>
+                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/nasm-prime-number' target='_blank'>Visit Repo</a>
                     </div>
 
                 </div>
