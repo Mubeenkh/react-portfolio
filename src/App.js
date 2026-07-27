@@ -88,13 +88,20 @@ function App() {
                     <div className='about-me-content'>
                         {/* another container to keep the circle shape of the image */}
                         <div className="about-me-image-container">
-                            <img src="./images/Profile3.jpg" alt="Mubeen Khan" className="about-me-image" />
+                            <img src="./images/profile2.png" alt="Mubeen Khan" className="about-me-image" />
                         </div>
 
                         <div>
                             <h3>Mubeen Khan</h3>
-                            <p>
+                            {/* <p>
                                 I am a Computer Science student at Concordia University. I am passionate about learning new technologies and building software applications. I am currently learning web development and eager to explore new technologies.
+                            </p> */}
+                            <p>
+                                Computer Science student at Concordia University with 5+ years of progressive experience across IT infrastructure, ERP systems, web 
+                                development, and business operations. Experienced in Java, Python, PHP, C#, JavaScript, React, MySQL, Git, Docker, Microsoft 
+                                Dynamics 365, WordPress, Shopify/Liquid, and network and server administration. Combines hands-on technical skills with practical 
+                                knowledge of inventory, ERP, and cross-functional business operations. Brings a strong ownership mindset and collaborative 
+                                approach to technical projects and workplace initiatives. Seeking a software development, IT, or systems role.
                             </p>
                         </div>
                     </div>
@@ -115,28 +122,99 @@ function App() {
                     <p>Computer Science and Technology</p>
                     <p>2021 - 2024</p>
                 </div>
+                <div className='education-item'>
+                    <h3>École Secondaire Saint-Laurent</h3>
+                    <p>2013 - 2019</p>
+                </div>
             </div>
 
             {/* Skills */}
             <div id="skills" className='skills'>
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>Flutter</li>
-                    <li>Dart</li>
-                    <li>Python</li>
-                    <li>C#</li>
-                    <li>Java</li>
-                    <li>React</li>
-                </ul>
+                <h2>Technical Skills</h2>
+                <div className='skills-grid'>
+                    <div className='skill-category'>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>C#</li>
+                            <li>C</li>
+                            <li>Dart</li>
+                            <li>Clojure</li>
+                        </ul>
+                    </div>
+
+                    <div className='skill-category'>
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Liquid</li>
+                            <li>WordPress</li>
+                            <li>Shopify</li>
+                        </ul>
+                    </div>
+
+                    <div className='skill-category'>
+                        <h3>Backend & Databases</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PHP</li>
+                            <li>Docker</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
+
+                    <div className='skill-category'>
+                        <h3>Tools & Version Control</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Visual Studio</li>
+                            <li>Android Studio</li>
+                            <li>NetBeans</li>
+                        </ul>
+                    </div>
+
+                    <div className='skill-category'>
+                        <h3>Enterprise & Business Systems</h3>
+                        <ul>
+                            <li>Microsoft Dynamics 365</li>
+                            <li>Microsoft Excel</li>
+                            <li>ERP Data Management</li>
+                        </ul>
+                    </div>
+
+                    <div className='skill-category'>
+                        <h3>IT & Networking</h3>
+                        <ul>
+                            <li>Network Administration</li>
+                            <li>Server Management</li>
+                            <li>UniFi Access Points</li>
+                            <li>Cameras</li>
+                            <li>Doorbells</li>
+                            <li>Speakers</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div id="projects" className='projects'>
                 <h2>Projects</h2>
                 <div className='projects-grid'>
+
+                    <div className='project-item'>
+                        <h3>MySQL Database Design</h3>
+                        <p>This project outlines the RENTRUCK Inc. database design, covering the E/R diagram, relational design, schemas with keys, and normalization rationale.</p>
+                        <div className="project-image-container">
+                            <img src="./images/projects/rentruck-er-diagram.png" alt="Project" className="project-image" />
+                        </div>
+                        <a className='visit-repo-button' href='https://github.com/chilkacastro/rentruck' target='_blank'>Visit Repo</a>
+                    </div>
+
                     <div className='project-item'>
                         <h3>Web-based IoT Dashboard</h3>
                         <p>The project aims to design a web-based IoT dashboard that integrates course-learned technologies to capture and analyze data.</p>

@@ -472,30 +472,50 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.skills ul {
-    display: flex;
-    flex-wrap: wrap;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
-    list-style-type: none;
-    /* Remove default list styling */
-    padding: 0;
 }
 
-.skills li {
+.skill-category {
     background-color: var(--item-color);
-    padding: 0.5rem 1rem;
+    border: var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: var(--shadow-box);
+}
+
+.skill-category h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: var(--highlight-color);
+    font-size: 1.1rem;
+}
+
+.skill-category ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category li {
+    background-color: var(--section-color);
+    padding: 0.4rem 0.7rem;
     border-radius: 5px;
     border: var(--border-color);
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4rem;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skills li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.skill-category li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Project styles */
