@@ -450,6 +450,74 @@ h1 {
     color: var(--highlight-color);
 }
 
+/* Experience styles */
+.experience {
+    background-color: var(--section-color);
+    color: var(--text-color);
+    padding: .5rem 2rem 2rem 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow-box);
+    max-width: 1000px;
+    width: 90%;
+    text-align: left;
+}
+
+.experience h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.experience-slider {
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    padding: 0.25rem 0.25rem 1rem 0.25rem;
+    scroll-snap-type: x proximity;
+}
+
+.experience-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.experience-slider::-webkit-scrollbar-thumb {
+    background: var(--highlight-color);
+    border-radius: 999px;
+}
+
+.experience-item {
+    flex: 0 0 min(90%, 440px);
+    background-color: var(--item-color);
+    border: var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem 1.4rem;
+    box-shadow: var(--shadow-box);
+    scroll-snap-align: start;
+}
+
+.experience-item h3 {
+    margin: 0 0 0.45rem 0;
+    color: var(--highlight-color);
+    font-size: 1.15rem;
+}
+
+.experience-role {
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: var(--text-color);
+}
+
+.experience-item ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 /* Skills styles */
 .skills {
     background-color: var(--section-color);

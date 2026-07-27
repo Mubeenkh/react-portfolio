@@ -128,6 +128,49 @@ function App() {
                 </div>
             </div>
 
+            {/* Professional Experience */}
+            <div id="experience" className='experience'>
+                <h2>Professional Experience</h2>
+
+                <div className='experience-slider'>
+                    <div className='experience-item'>
+                        <h3>ERALUX — Montreal, QC</h3>
+                        <p className='experience-role'>IT Department | January 2024 – Present</p>
+                        <ul>
+                            <li>Manage and maintain office and warehouse IT infrastructure, including servers, network equipment, and UniFi-based security and connectivity systems.</li>
+                            <li>Configure and maintain UniFi access points, cameras, doorbells, and speakers across multiple business locations.</li>
+                            <li>Develop and maintain company websites using WordPress, including page creation, content updates, and site improvements.</li>
+                            <li>Customize Shopify storefronts using Liquid to support business-specific requirements and improve the online customer experience.</li>
+                            <li>Built and maintained an inventory display website on Shopify, integrating live inventory data from Microsoft Dynamics 365.</li>
+                            <li>Take ownership of technical and systems-related tasks while collaborating with sales, operations, and other internal teams to improve business processes and data accessibility.</li>
+                        </ul>
+                    </div>
+
+                    <div className='experience-item'>
+                        <h3>ERALUX — Montreal, QC</h3>
+                        <p className='experience-role'>ERP Associate | February 2021 – January 2024</p>
+                        <ul>
+                            <li>Managed product part numbers, pricing structures, descriptions, and related product data for thousands of products using Microsoft Dynamics 365 and Microsoft Excel.</li>
+                            <li>Maintained accurate and consistent product and inventory data across enterprise systems, helping reduce discrepancies and improve order fulfillment.</li>
+                            <li>Supported sales and operations teams with accurate product information, inventory data, and reporting.</li>
+                            <li>Worked with large volumes of product data while maintaining a high level of attention to detail and data quality.</li>
+                            <li>Contributed to improvements in ERP data management and internal business processes, working across teams to support operational needs.</li>
+                        </ul>
+                    </div>
+
+                    <div className='experience-item'>
+                        <h3>ERALUX — Montreal, QC</h3>
+                        <p className='experience-role'>Warehouse Worker | July 2019 – February 2021</p>
+                        <ul>
+                            <li>Managed incoming inventory, order preparation, product organization, and shipping logistics in a fast-paced warehouse environment.</li>
+                            <li>Prepared and adjusted product specifications, including wattage and technical details, to meet customer and order requirements.</li>
+                            <li>Maintained an organized warehouse layout to improve workflow and reduce product retrieval time.</li>
+                            <li>Collaborated with warehouse and operations teams to ensure accurate and timely order fulfillment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             {/* Skills */}
             <div id="skills" className='skills'>
                 <h2>Technical Skills</h2>

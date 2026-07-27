@@ -29,6 +29,7 @@ function Hamburger() {
                 <ul>
                     <li><a href="#about-me" onClick={toggleMenu}>About Me</a></li>
                     <li><a href="#education" onClick={toggleMenu}>Education</a></li>
+                    <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
                     <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
                     <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
                     <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
