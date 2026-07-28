@@ -255,7 +255,7 @@ function App() {
                         <div className="project-image-container">
                             <img src="./images/projects/rentruck-er-diagram.png" alt="Project" className="project-image" />
                         </div>
-                        <a className='visit-repo-button' href='https://github.com/chilkacastro/rentruck' target='_blank' rel="noopener">Visit Repo</a>
+                        <a className='visit-repo-button' href='https://github.com/chilkacastro/rentruck' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
 
                     <div className='project-item'>
@@ -264,7 +264,7 @@ function App() {
                         <div className="project-image-container">
                             <img src="./images/projects/iotdashboard.png" alt="Project" className="project-image" />
                         </div>
-                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/IoT_Final_Project' target='_blank' rel="noopener">Visit Repo</a>
+                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/IoT_Final_Project' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
 
                     <div className='project-item'>
@@ -273,7 +273,7 @@ function App() {
                         <div className="project-image-container">
                             <img src="./images/projects/fitwork.png" alt="Project" className="project-image" />
                         </div>
-                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/FitWork' target='_blank' rel="noopener">Visit Repo</a>
+                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/FitWork' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
 
                     <div className='project-item'>
@@ -282,7 +282,7 @@ function App() {
                         <div className="project-image-container">
                             <img src="./images/projects/sweemory.png" alt="Project" className="project-image" />
                         </div>
-                        <a className='visit-repo-button' href='https://github.com/Deven8378/TeamProjectW23' target='_blank' rel="noopener">Visit Repo</a>
+                        <a className='visit-repo-button' href='https://github.com/Deven8378/TeamProjectW23' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
 
                     <div className='project-item'>
@@ -291,7 +291,7 @@ function App() {
                         <div className="project-image-container">
                             <img src="./images/projects/veritas.png" alt="Project" className="project-image" />
                         </div>
-                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/VeritasProject' target='_blank' rel="noopener">Visit Repo</a>
+                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/VeritasProject' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
 
                     <div className='project-item'>
@@ -300,7 +300,7 @@ function App() {
                         <div className="project-image-container">
                             <img src="./images/projects/game-prog-project.png" alt="Project" className="project-image" />
                         </div>
-                        <a className='visit-repo-button' href='https://github.com/GoldyBlocksLOL/GameProg2Project' target='_blank' rel="noopener">Visit Repo</a>
+                        <a className='visit-repo-button' href='https://github.com/GoldyBlocksLOL/GameProg2Project' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
 
                     <div className='project-item'>
@@ -309,7 +309,7 @@ function App() {
                         <div className="project-image-container">
                             <img src="./images/projects/nasm-icon.png" alt="Project" className="project-image" />
                         </div>
-                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/nasm-prime-number' target='_blank' rel="noopener">Visit Repo</a>
+                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/nasm-prime-number' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
 
                 </div>
@@ -321,9 +321,9 @@ function App() {
                 <h2>Contact</h2>
                 <p><strong>Email:</strong> mubkhan01@gmail.com</p>
                 {/* <p><strong>Phone:</strong> (123) 456-7890</p> */}
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubeen-khan-75b48511a" target="_blank" rel="noopener noreferrer">linkedin.com/in/mubeen-khan</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Mubeenkh" target="_blank" rel="noopener noreferrer" >github.com/Mubeenkh</a></p>
-                <p><strong>Portfolio Github:</strong> <a href="https://github.com/Mubeenkh/react-portfolio" target='_blank' rel="noopener" rel="noopener noreferrer">github.com/Mubeenkh/react-portfolio</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mubeen-khan-75b48511a" target="_blank" rel="noreferrer noreferrer">linkedin.com/in/mubeen-khan</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Mubeenkh" target="_blank" rel="noreferrer noreferrer" >github.com/Mubeenkh</a></p>
+                <p><strong>Portfolio Github:</strong> <a href="https://github.com/Mubeenkh/react-portfolio" target='_blank' rel="noreferrer" rel="noreferrer noreferrer">github.com/Mubeenkh/react-portfolio</a></p>
             </div>
 
             {showButton && (
