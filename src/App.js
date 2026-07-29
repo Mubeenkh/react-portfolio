@@ -250,6 +250,15 @@ function App() {
                 <div className='projects-grid'>
 
                     <div className='project-item'>
+                        <h3>Email Organizer</h3>
+                        <p>A lightweight, local Python script that automatically categorizes unread Gmail messages into custom labels using keyword rules.</p>
+                        <div className="project-image-container">
+                            <img src="./images/projects/1778356469d177.png" alt="Project" className="project-image" />
+                        </div>
+                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/email-organizer' target='_blank' rel="noreferrer">Visit Repo</a>
+                    </div>
+
+                    <div className='project-item'>
                         <h3>MySQL Database Design</h3>
                         <p>This project outlines the RENTRUCK Inc. database design, covering the E/R diagram, relational design, schemas with keys, and normalization rationale.</p>
                         <div className="project-image-container">
@@ -257,6 +266,16 @@ function App() {
                         </div>
                         <a className='visit-repo-button' href='https://github.com/chilkacastro/rentruck' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
+
+                    <div className='project-item'>
+                        <h3>Prime Number Determination</h3>
+                        <p>Write a complete Intel x86 assembly language program which determines whether a byte sized operand stored in memory location number is prime or not. </p>
+                        <div className="project-image-container">
+                            <img src="./images/projects/nasm-icon.png" alt="Project" className="project-image" />
+                        </div>
+                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/nasm-prime-number' target='_blank' rel="noreferrer">Visit Repo</a>
+                    </div>
+
 
                     <div className='project-item'>
                         <h3>Web-based IoT Dashboard</h3>
@@ -303,14 +322,7 @@ function App() {
                         <a className='visit-repo-button' href='https://github.com/GoldyBlocksLOL/GameProg2Project' target='_blank' rel="noreferrer">Visit Repo</a>
                     </div>
 
-                    <div className='project-item'>
-                        <h3>Prime Number Determination</h3>
-                        <p>Write a complete Intel x86 assembly language program which determines whether a byte sized operand stored in memory location number is prime or not. </p>
-                        <div className="project-image-container">
-                            <img src="./images/projects/nasm-icon.png" alt="Project" className="project-image" />
-                        </div>
-                        <a className='visit-repo-button' href='https://github.com/Mubeenkh/nasm-prime-number' target='_blank' rel="noreferrer">Visit Repo</a>
-                    </div>
+
 
                 </div>
             </div>
